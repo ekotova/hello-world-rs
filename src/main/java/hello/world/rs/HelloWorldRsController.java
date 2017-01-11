@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloWorldRsController {
-    private static String text = "Hello, World!";
+    private final static String text = "Hello, World!";
 
     @RequestMapping("/get")
     public HelloWorldRsResponse response() {
